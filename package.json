@@ -1,0 +1,23 @@
+{
+  "name": "tg-split-calc",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Telegram Mini App: калькулятор распределения суммы N (89% / 7% / 4%) с экспортом в xlsx",
+  "workspaces": [
+    "server",
+    "web"
+  ],
+  "scripts": {
+    "dev": "npm run dev --workspace=server & npm run dev --workspace=web",
+    "dev:server": "npm run dev --workspace=server",
+    "dev:web": "npm run dev --workspace=web",
+    "build": "npm run build --workspace=web",
+    "start": "npm run start --workspace=server",
+    "test": "npm run test --workspace=server",
+    "typecheck": "npm run typecheck --workspace=server && npm run typecheck --workspace=web",
+    "build:standalone": "npm run build:standalone --workspace=web"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
